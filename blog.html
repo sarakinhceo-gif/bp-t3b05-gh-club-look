@@ -1,65 +1,128 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>블로그 — 게이트 앤 그라운드</title>
-    <meta name="description" content="공항에서 클럽까지 완성하는 스트릿 브루탈리즘 룩북. 오버사이즈 블레이저, 카고 팬츠, 두꺼운 스니커즈로 보딩하는 진짜 스타일. 게이트에서 터지는 스트릿 감성.">
-    <meta name="keywords" content="공항 클럽 룩북, 스트릿 브루탈리즘, 오버사이즈 룩, 게이트 패션, 공항 패션, 힙합 클럽 룩, 제주도 클럽, 인천공항 클럽, T3B05, 게이트 앤 그라운드">
-    <meta name="author" content="게이트 앤 그라운드">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://gangnam-club-review.node-link.shop/blog.html">
-    <!-- OG 메타 -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="게이트에서 클럽까지: 스트릿 브루탈리즘으로 완성하는 공항 룩북">
-    <meta property="og:description" content="공항에서 클럽까지 완성하는 스트릿 브루탈리즘 룩북. 오버사이즈 블레이저, 카고 팬츠, 두꺼운 스니커즈로 보딩하는 진짜 스타일. 게이트에서 터지는 스트릿 감성.">
-    <meta property="og:image" content="https://t3b05-gh-club-look.vercel.app/assets/og-blog.jpg">
-    <meta property="og:url" content="https://gangnam-club-review.node-link.shop/blog.html">
-    <meta property="og:site_name" content="게이트 앤 그라운드">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="게이트에서 클럽까지: 스트릿 브루탈리즘으로 완성하는 공항 룩북">
-    <meta name="twitter:description" content="공항 클럽 룩북. 오버사이즈 블레이저, 카고 팬츠, 두꺼운 스니커즈로 보딩하는 진짜 스트릿 브루탈리즘.">
-    <meta name="twitter:image" content="https://t3b05-gh-club-look.vercel.app/assets/og-blog.jpg">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>공항 클럽 룩북 — 블로그</title>
+  <meta name="description" content="공항 클럽을 처음 방문하는 이들을 위한 실전 조건별 준비와 선택 기준을 제시합니다. 소규모와 대규모, 이른 시간대와 늦은 시간대, 목적에 따라 달라지는 팁을 확인해보세요.">
+  <meta name="keywords" content="공항 클럽, 클럽 룩북, 공항 클럽 이용, 클럽 준비, 클럽 선택 기준">
+  <link rel="canonical" href="https://gangnam-club-review.node-link.shop/blog.html">
+  <meta property="og:title" content="공항 클럽 룩북 — 블로그">
+  <meta property="og:description" content="공항 클럽을 처음 방문하는 이들을 위한 실전 조건별 준비와 선택 기준을 제시합니다.">
+  <meta property="og:url" content="https://gangnam-club-review.node-link.shop/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630">
+  <style>
+    /* 기본 폰트와 색상 */ 
+    :root{
+      --primary:#111;
+      --accent:#e63946;
+      --bg:#fafafa;
+      --text:#222;
+      --font-main:'Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+    body{
+      margin:0;
+      padding:0;
+      font-family:var(--font-main);
+      background:var(--bg);
+      color:var(--text);
+    }
+    header{
+      background:var(--primary);
+      color:#fff;
+      padding:20px;
+      text-align:center;
+    }
+    nav ul{
+      list-style:none;
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      margin:0;
+      padding:0;
+    }
+    nav li{}
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    nav a:hover{
+      color:var(--accent);
+    }
+    .menu-toggle{display:none;}
+    @media (max-width:768px){
+      nav ul{flex-direction:column;display:none;}
+      #toggle:checked + nav ul{display:flex;}
+    }
+    section{
+      padding:30px 10%;
+    }
+    section:nth-child(even){
+      background:#f0f0f0;
+    }
+    h1{font-size:2.5rem;margin-bottom:0.5rem;}
+    h2{font-size:2rem;margin-top:1.5rem;margin-bottom:0.5rem;}
+    p{line-height:1.6;margin-bottom:1rem;}
+    button{
+      background:var(--accent);
+      color:#fff;
+      border:none;
+      padding:10px 20px;
+      cursor:pointer;
+    }
+  </style>
 </head>
 <body>
-    <nav class="nav-present">
-        <div class="nav-inner">
-            <a href="./" class="nav-logo">게이트 앤 그라운드</a>
-            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active')">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="./">홈</a></li>
-                <li><a href="./lookbook">룩북</a></li>
-                <li><a href="./blog" class="active">블로그</a></li>
-                <li><a href="./faq">FAQ</a></li>
-                <li><a href="./contact">연락처</a></li>
-            </ul>
-        </div>
-    </nav>
+  <header>
+    <h1>공항 클럽 룩북</h1>
+  </header>
 
-    <main>
-        <article class="blog-post">
-            <header class="blog-header">
-                <h1>게이트에서 클럽까지: 스트릿 브루탈리즘으로 완성하는 공항 룩북</h1>
-                <div class="blog-meta">
-                    <time datetime="2025-04-10">2025.04.10</time>
-                    <span class="author">by 게이트 앤 그라운드</span>
-                </div>
-            </header>
+  <input type="checkbox" id="toggle" class="menu-toggle">
+  <nav>
+    <ul>
+      <li><a href="/">홈</a></li>
+      <li><a href="/clubs">클럽 소개</a></li>
+      <li><a href="/blog">블로그</a></li>
+      <li><a href="/contact">연락처</a></li>
+    </ul>
+  </nav>
 
-            <section class="blog-content">
-                <p class="lead">야, 공항에서도 클럽룩 입는 게 트렌드라는 거 알지? 근데 그냥 클럽룩 말고, 진짜 강한 스트릿 브루탈리즘 스타일로 보딩하는 법을 알려줄게. 인천공항 게이트에서부터 클럽 입구까지 하나로 터지는 룩, 지금 바로 공개한다.</p>
+  <section>
+    <h2>첫 번째, 클럽 선택 전 반드시 체크해야 할 3가지 기본 요소</h2>
+    <p>공항이라는 특수 공간에서 클럽을 고를 땐 ‘규모’, ‘시간대’, 그리고 ‘목적’ 이 세 축을 동시에 바라보는 게 필수다. 규모가 작다면 소수 인원과 친밀감이 보장되지만, 동시에 입장 제한이 잦아 대기 시간이 길어질 수 있다. 반대로 대형 클럽은 인파와 소음으로 인해 개인적인 사교가 힘들지만, 다양한 테마와 퍼포먼스를 한 번에 체험할 수 있다. 이를 토대로 자신의 파티 스타일을 먼저 정의해 두어야 한다.</p>
+    <p>시간대는 또 다른 변수다. 이른 아침 6~8시 사이에 열리는 ‘아침 클럽’은 항공편 대기 시간과 겹쳐 피로를 가중시킬 위험이 있다. 반면, 늦은 밤 22시 이후는 보안 검문이 늦어지는 경우가 많아 입장 절차가 복잡해질 수 있다. 최적의 시간대를 찾기 위해서는 항공편 일정과 연결된 교통 상황까지 고려한 종합 플랜을 수립하는 것이 현명하다. 목적이 단순히 ‘음악 감상’인지, ‘네트워킹’인지에 따라 선택 기준이 달라진다.</p>
+  </section>
 
-                <h2>1. 오버사이즈 블레이저 — 공항의 갑옷</h2>
-                <p>스트릿 브루탈리즘의 핵심은 과장된 실루엣이야. 블레이저도 예외는 아냐. 평소 사이즈보다 두 치수 큰 블레이저를 걸쳐. 어깨는 떨어지고 소매는 손등을 덮는 게 포인트. 색깔은 블랙, 차콜, 혹은 올리브로 몰아쳐. 원단은 울 혼방이나 코튼 트윌 — 구겨져도 괜찮아, 오히려 그게 브루탈리즘이다.</p>
+  <section>
+    <h2>두 번째, 인원 규모와 분위기에 맞는 구역 선택 팁</h2>
+    <p>클럽 내부는 종종 ‘라운지’, ‘메인 플로어’, ‘VIP 룸’ 등으로 구분된다. 라운지는 상대적으로 조용하고 편안해 비즈니스 미팅이나 친목 도모에 알맞다. 반면 메인 플로어는 대형 사운드 시스템과 조명이 가득해 에너지 방출을 원하는 사람에게 최적이다. VIP 룸은 프라이버시가 보장되는 만큼 높은 가격대와 최소 인원 조건이 붙는다. 각각의 구역을 미리 파악하고, 자신이 원하는 분위기에 맞춰 예약을 진행하라.</p>
+    <p>또한, 인원 규모에 따른 입장 제한 규칙을 반드시 확인하라. 최소 10명, 최대 30명까지 제한하는 클럽은 사전 예약이 필수이며, 서브스크립션 회원제라면 사전 체크인 절차가 존재한다. 이런 제약을 무시하면 현장에서 입장이 거부될 위험이 크다. 따라서, 사전에 클럽 공식 홈페이지 혹은 SNS를 통해 최신 입장 정책을 확인하고, 필요 시 전화 문의까지 병행하는 것이 좋다.</p>
+  </section>
 
-                <h2>2. 카고 팬츠 — 기능성은 덤</h2>
-                <p>비행기에서 앉아 있을 때 편한 건 기본, 클럽에서도 움직임을 방해하지 않아야 진짜야. 카고 팬츠는 넉넉한 핏에 스트링이나 벨트로 허리를 조여. 포켓은 많을수록 좋아 — 보딩 패스, 카드, 폰 다 넣고 가방은 필요 없게. 원단은 나일론이나 면 혼방으로 가벼운 걸 골라.</p>
+  <section>
+    <h2>세 번째, 목적에 따라 챙겨야 할 필수 아이템 리스트</h2>
+    <p>‘음악 중심’ 방문이라면 고음질 무선 이어폰, 가벼운 방수 백, 그리고 손목 시계 정도면 충분하다. ‘네트워킹’ 목적이라면 명함, 간단한 포트폴리오, 그리고 스마트폰에 저장된 QR 코드 명함을 준비해 두면 현장에서 즉시 교류가 가능하다. 또한, 공항 내 보안 검사를 고려해 금속류와 액세서리는 최소화하고, 필요 시 ‘보안 전용 가방’에 소지품을 정리하는 것이 효율적이다.</p>
+    <p>마지막으로, 상황에 따라 변동될 수 있는 ‘복장 규정’도 체크하라. 일부 클럽은 ‘드레스 코드’를 엄격히 적용해 정장 혹은 블랙 톤 의상만 허용한다. 반대로 스트리트 브루탈리즘 스타일을 지향하는 클럽은 독특한 패션을 환영하지만, 지나친 노출이나 과도한 액세서리는 제한될 수 있다. 이러한 규정은 홈페이지 FAQ 섹션에 명시돼 있으니 반드시 사전에 확인한다.</p>
+  </section>
 
-                <h2>3. 두꺼운 스니커즈 — 발은 크게, 소리는 작게</h2>
-                <p>뉴발란
+  <section>
+    <h2>FAQ – 자주 묻는 질문</h2>
+    <p><strong>Q1. 공항 클럽에 입장 전에 반드시 보여줘야 하는 서류가 있나요?</strong><br>
+    A1. 대부분의 클럽은 항공권 QR코드와 신분증(여권 혹은 주민등록증)만을 요구한다. 일부 고급 라운지는 멤버십 카드가 필요하니 사전 확인이 필요하다.</p>
+
+    <p><strong>Q2. 늦은 밤에 클럽을 이용할 때 교통편은 어떻게 확보하나요?</strong><br>
+    A2. 공항 내 셔틀버스와 24시간 운영되는 택시 서비스를 미리 예약해 두는 것이 가장 안전하다. 특히, 대형 클럽 주변은 주차 공간이 제한적이므로 대중교통 이용을 권장한다.</p>
+
+    <p><strong>Q3. 클럽 내부에서 촬영이 가능한가요?</strong><br>
+    A3. 대부분의 클럽은 무단 촬영을 금지하고 있다. 공식 행사나 사전 허가받은 경우에만 촬영이 가능하니, 입장 전 직원에게 확인한다.</p>
+  </section>
+
+  <section>
+    <h2>마무리 – 나만의 공항 클럽 루틴 만들기</h2>
+    <p>공항 클럽은 단순한 파티 공간이 아니다. 여행 전후의 짧은 시간에 새로운 사람을 만나고, 음악과 문화 트렌드를 체험할 수 있는 독특한 무대다. 따라서, ‘목적 → 시간대 → 규모 → 구역 → 아이템’ 순으로 체크리스트를 만든 뒤 실행에 옮긴다면, 언제든지 최적의 클럽 경험을 보장받을 수 있다.</p>
+    <p>이제 당신만의 기준을 세우고, 실제 공항 클럽 현장에서 그 기준을 검증해 보라. 기존 틀에 얽매이지 말고, 스스로 만든 규칙을 따르는 것이 가장 강렬한 ‘브루탈리즘’이다. 강렬한 사운드와 눈부신 조명이 당신을 기다린다. 지금 바로 체크리스트를 다운로드하고, 새로운 클럽 모험을 시작하라.</p>
+    <button onclick="window.location.href='https://gangnam-club-review.node-link.shop/download-checklist'">체크리스트 다운로드</button>
+  </section>
 </body>
 </html>

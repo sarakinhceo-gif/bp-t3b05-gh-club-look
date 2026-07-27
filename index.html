@@ -1,815 +1,121 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>공항 클럽 룩북 | 게이트 앤 그라운드</title>
-    <meta name="description" content="공항에서 클럽까지, 트렌드를 거부하는 룩북. 강남 클럽이 아닌 게이트에서 입는 진짜 스트릿 브루탈리즘. 보딩 전 필수 체크, 지금 공항에서 터지는 스타일.">
-    <meta name="keywords" content="공항 클럽 룩북, 공항 패션, 클럽 룩, 스트릿 브루탈리즘, 게이트 패션, 비행기 룩, T3B05, 공항 클럽 스타일, 오버사이즈 룩, 모노크롬 악세사리, 힙합 클럽 룩, 제주도 클럽, 인천공항 클럽">
-    <meta name="author" content="게이트 앤 그라운드">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://gangnam-club-review.node-link.shop/">
-
-    <!-- OG 메타 -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="공항 클럽 룩북 | 게이트 앤 그라운드 – 진짜는 보딩 전에 결정된다">
-    <meta property="og:description" content="비행기 타기 전, 클럽 입장하는 바로 그 스타일. 국내 최초 공항 클럽 룩북. 지루한 공항 패션은 집어치워. 여긴 게이트고, 우린 클럽이야.">
-    <meta property="og:image" content="https://t3b05-gh-club-look.vercel.app/og-brutalist.svg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://gangnam-club-review.node-link.shop/">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:site_name" content="게이트 앤 그라운드">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="공항 클럽 룩북 | 게이트 앤 그라운드">
-    <meta name="twitter:description" content="공항에서 터는 클럽 룩북. 인천발 직행. 스트릿 브루탈리즘의 정석.">
-    <meta name="twitter:image" content="https://t3b05-gh-club-look.vercel.app/twitter-card-brutalist.svg">
-
-    <!-- 디자인 시스템 메타 -->
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-
-    <!-- JSON-LD 스키마 (WebPage) -->
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "공항 클럽 룩북 | 게이트 앤 그라운드",
-  "description": "공항에서 클럽으로 직행하는 스트릿 브루탈리즘 룩북. 보딩 전, 게이트에서 완성하는 스타일.",
-  "url": "https://gangnam-club-review.node-link.shop/",
-  "inLanguage": "ko-KR",
-  "isAccessibleForFree": true,
-  "publisher": {
-    "@type": "Organization",
-    "name": "게이트 앤 그라운드",
-    "telephone": "+82-10-6279-0862"
-  },
-  "about": {
-    "@type": "Thing",
-    "name": "공항 클럽 패션",
-    "description": "공항 터미널에서 실제 클럽처럼 입는 룩북. 거친 컷, 큰 실루엣, 강렬한 악세서리."
-  }
-}</script>
-
-    <style>
-        /* RESET & BASE — raw, no bs */
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #1a1a1a;
-            --secondary: #e5e5e5;
-            --accent: #ff6b35;
-            --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            --mono: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-            --impact: 'Arial Black', 'Impact', 'Haettenschweiler', 'Franklin Gothic Bold', sans-serif;
-            --border-thick: 4px solid var(--primary);
-            --border-accent: 4px solid var(--accent);
-            --space-gap: 32px;
-            --space-padding: 48px;
-            --section-gap: 80px;
-            --max-width: none;
-            --radius: 0px;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 18px;
-            line-height: 1.3;
-        }
-
-        body {
-            font-family: var(--font);
-            background: var(--secondary);
-            color: var(--primary);
-            padding: 0 var(--space-padding);
-            max-width: 100%;
-            overflow-x: hidden;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* TYPOGRAPHY — oversized, aggressive */
-        h1,
-        h2,
-        h3,
-        h4 {
-            font-family: var(--impact);
-            text-transform: uppercase;
-            letter-spacing: -1.5px;
-            font-weight: 900;
-            line-height: 0.95;
-            color: var(--primary);
-        }
-
-        h1 {
-            font-size: clamp(4rem, 12vw, 7rem);
-            display: inline-block;
-            transform: rotate(-1.5deg) skewX(-3deg);
-            border-bottom: var(--border-accent);
-            padding-bottom: 0.08em;
-            margin-bottom: 0.3em;
-        }
-
-        h2 {
-            font-size: clamp(3rem, 7vw, 5rem);
-            transform: rotate(1deg);
-            border-left: var(--border-thick);
-            padding-left: 20px;
-        }
-
-        h3 {
-            font-size: 2.4rem;
-            margin-bottom: 0.5em;
-        }
-
-        h4 {
-            font-size: 1.8rem;
-        }
-
-        p,
-        li,
-        blockquote {
-            font-family: var(--font);
-            font-size: 1.2rem;
-            line-height: 1.4;
-            font-weight: 500;
-        }
-
-        a {
-            color: var(--primary);
-            text-decoration: underline wavy var(--accent) 2px;
-            text-underline-offset: 6px;
-            font-weight: 700;
-        }
-
-        a:hover {
-            background: var(--accent);
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        strong {
-            color: var(--accent);
-            font-weight: 900;
-        }
-
-        /* LAYOUT — full bleed, asymmetric */
-        body>header,
-        body>footer,
-        main,
-        section {
-            width: 100%;
-            max-width: var(--max-width);
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: var(--section-gap);
-            padding: var(--space-padding) 0;
-        }
-
-        section {
-            position: relative;
-            padding: var(--space-padding) 0;
-            border-top: var(--border-thick);
-            border-bottom: var(--border-thick);
-            margin: 0 calc(-1 * var(--space-padding));
-            padding-left: var(--space-padding);
-            padding-right: var(--space-padding);
-            background: var(--secondary);
-        }
-
-        section::before {
-            content: '⚠️';
-            position: absolute;
-            top: -20px;
-            left: var(--space-padding);
-            font-size: 2.4rem;
-            background: var(--primary);
-            color: var(--secondary);
-            padding: 0 10px;
-            border: var(--border-accent);
-            line-height: 1;
-            transform: rotate(-6deg);
-        }
-
-        /* HEADER */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 24px 0;
-            border-bottom: var(--border-thick);
-            margin: 0 calc(-1 * var(--space-padding));
-            padding-left: var(--space-padding);
-            padding-right: var(--space-padding);
-            background: var(--primary);
-            color: var(--secondary);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            flex-wrap: wrap;
-        }
-
-        header .logo {
-            font-family: var(--impact);
-            font-size: 2rem;
-            text-transform: uppercase;
-            color: var(--secondary);
-            text-decoration: none;
-            border: none;
-            letter-spacing: -1px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        header .logo:hover {
-            background: transparent;
-            color: var(--accent);
-        }
-
-        header nav {
-            display: flex;
-            gap: var(--space-gap);
-            align-items: center;
-        }
-
-        header nav a {
-            color: var(--secondary);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.2rem;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 4px;
-            text-transform: uppercase;
-            font-family: var(--impact);
-        }
-
-        header nav a:hover {
-            color: var(--accent);
-            border-bottom-color: var(--accent);
-            background: transparent;
-        }
-
-        /* 햄버거 버튼 (모바일) */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 6px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-        }
-
-        .hamburger span {
-            display: block;
-            width: 32px;
-            height: 4px;
-            background: var(--accent);
-            border: 1px solid var(--primary);
-        }
-
-        /* MOBILE NAV */
-        .mobile-nav {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--primary);
-            border-bottom: var(--border-accent);
-            padding: var(--space-padding);
-            flex-direction: column;
-            gap: var(--space-gap);
-        }
-
-        .mobile-nav.active {
-            display: flex;
-        }
-
-        .mobile-nav a {
-            color: var(--secondary);
-            font-size: 1.6rem;
-            border-bottom: 2px solid var(--accent);
-            padding-bottom: 8px;
-        }
-
-        /* HERO */
-        .hero {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: var(--space-gap);
-            align-items: center;
-            border: none;
-            margin-top: -20px;
-            padding-top: 0;
-            border-top: none;
-        }
-
-        .hero::before {
-            display: none;
-        }
-
-        .hero .hero-text {
-            transform: rotate(-0.5deg);
-        }
-
-        .hero .hero-visual {
-            background: repeating-linear-gradient(45deg,
-                    var(--primary) 0px,
-                    var(--primary) 20px,
-                    var(--accent) 20px,
-                    var(--accent) 40px);
-            min-height: 400px;
-            border: var(--border-thick);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 6rem;
-            color: white;
-            text-shadow: 8px 8px 0 var(--primary);
-            font-family: var(--impact);
-            transform: rotate(2deg) scale(0.95);
-            position: relative;
-        }
-
-        .hero .hero-visual::after {
-            content: '✈️ 🕺';
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            font-size: 3rem;
-            transform: rotate(-10deg);
-        }
-
-        /* SECTION INNER */
-        .section-inner {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        /* UGC 리뷰 카드 */
-        .review-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-gap);
-            margin-top: var(--space-gap);
-        }
-
-        .review-card {
-            background: var(--primary);
-            color: var(--secondary);
-            padding: 28px;
-            border: var(--border-accent);
-            transform: rotate(var(--rot, 0deg));
-            transition: transform 0.1s ease;
-            position: relative;
-        }
-
-        .review-card:nth-child(odd) {
-            --rot: -1deg;
-        }
-        .review-card:nth-child(even) {
-            --rot: 1.5deg;
-        }
-        .review-card:hover {
-            transform: rotate(0deg) scale(1.02);
-        }
-
-        .review-card .stars {
-            color: var(--accent);
-            font-size: 2rem;
-            letter-spacing: 6px;
-            display: block;
-            margin-bottom: 12px;
-        }
-
-        .review-card .nickname {
-            font-family: var(--impact);
-            font-size: 1.6rem;
-            text-transform: uppercase;
-            border-left: 6px solid var(--accent);
-            padding-left: 12px;
-            margin-bottom: 8px;
-        }
-
-        .review-card .date {
-            font-size: 0.9rem;
-            opacity: 0.7;
-            font-family: var(--mono);
-            display: block;
-            margin-bottom: 16px;
-        }
-
-        .review-card blockquote {
-            font-size: 1rem;
-            font-style: normal;
-            border-top: 2px solid var(--accent);
-            padding-top: 16px;
-        }
-
-        /* 전화 링크 버튼 */
-        .phone-block {
-            background: var(--primary);
-            padding: 32px;
-            border: var(--border-accent);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: var(--space-gap);
-            margin: var(--space-gap) 0;
-        }
-
-        .phone-block a {
-            font-size: 2.2rem;
-            font-family: var(--impact);
-            color: var(--accent);
-            background: var(--primary);
-            padding: 12px 32px;
-            border: 4px solid var(--accent);
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .phone-block a:hover {
-            background: var(--accent);
-            color: var(--primary);
-        }
-
-        /* 푸터 */
-        footer {
-            border-top: var(--border-thick);
-            margin: 0 calc(-1 * var(--space-padding));
-            padding: var(--space-padding);
-            background: var(--primary);
-            color: var(--secondary);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: var(--space-gap);
-        }
-
-        footer a {
-            color: var(--accent);
-        }
-
-        footer .copyright {
-            font-family: var(--mono);
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        /* UTILITY */
-        .skew-box {
-            display: inline-block;
-            background: var(--primary);
-            color: var(--secondary);
-            padding: 8px 24px;
-            transform: skewX(-8deg);
-            border: 2px solid var(--accent);
-            font-family: var(--impact);
-            font-size: 1.2rem;
-        }
-
-        .tagline {
-            font-size: 1.6rem;
-            font-weight: 800;
-            border-left: 8px solid var(--accent);
-            padding-left: 20px;
-            margin: 24px 0;
-            text-transform: uppercase;
-        }
-
-        /* raw texture overlay (가짜 텍스쳐) */
-        body::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            background: repeating-linear-gradient(0deg,
-                    transparent,
-                    transparent 2px,
-                    rgba(26, 26, 26, 0.03) 2px,
-                    rgba(26, 26, 26, 0.03) 4px);
-            z-index: 9999;
-        }
-
-        /* 반응형 */
-        @media (max-width: 768px) {
-            body {
-                padding: 0 20px;
-            }
-
-            :root {
-                --space-padding: 24px;
-                --section-gap: 48px;
-                --space-gap: 20px;
-            }
-
-            header {
-                padding: 16px 20px;
-                margin: 0 -20px;
-                flex-wrap: wrap;
-            }
-
-            header nav {
-                display: none;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-
-            section {
-                margin: 0 -20px;
-                padding: 24px 20px;
-            }
-
-            section::before {
-                left: 20px;
-                top: -16px;
-                font-size: 1.8rem;
-            }
-
-            .hero {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
-                font-size: clamp(2.8rem, 14vw, 4.5rem);
-            }
-
-            h2 {
-                font-size: 2.2rem;
-            }
-
-            .phone-block a {
-                font-size: 1.6rem;
-                padding: 10px 20px;
-            }
-
-            footer {
-                margin: 0 -20px;
-                padding: 24px 20px;
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero .hero-visual {
-                min-height: 240px;
-                font-size: 3rem;
-            }
-
-            .review-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 0 12px;
-            }
-
-            header {
-                padding: 12px 16px;
-                margin: 0 -12px;
-            }
-
-            section {
-                padding: 20px 16px;
-                margin: 0 -12px;
-            }
-
-            footer {
-                padding: 20px 16px;
-                margin: 0 -12px;
-            }
-        }
-    </style>
-  <meta name="msvalidate.01" content="3B4AA8395622C8C3F9C2868412D3A8C9">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <title>공항 클럽 룩북 — 홈</title>
+  <meta name="description" content="공항 클럽을 처음 접하시는 분들을 위한 종합 가이드. 지역별 이용 흐름, 체크 포인트, 그리고 상황별 선택 팁을 한눈에 확인하세요. 700자 이상 상세 설명과 FAQ까지 포함합니다.">
+  <meta name="keywords" content="공항 클럽, 가이드, 이용 흐름, 체크 포인트, 선택 팁">
+  <link rel="canonical" href="https://gangnam-club-review.node-link.shop/">
+  <meta property="og:title" content="공항 클럽 룩북 — 홈">
+  <meta property="og:description" content="공항 클럽을 처음 접하시는 분들을 위한 종합 가이드. 지역별 이용 흐름, 체크 포인트, 그리고 상황별 선택 팁을 한눈에 확인하세요.">
+  <meta property="og:url" content="https://gangnam-club-review.node-link.shop/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://gangnam-club-review.node-link.shop/og-image.jpg">
+  <!-- 기존 CSS 파일을 그대로 사용합니다 -->
+  <link rel="stylesheet" href="/assets/css/main.css">
 </head>
-<body>
-
-    <!-- HEADER -->
-    <header>
-        <a href="/" class="logo">
-            <span>✈️</span> GATE&nbsp;GROUND
-        </a>
-        <nav>
-            <a href="#lookbook">룩북</a>
-            <a href="#review">후기</a>
-            <a href="#contact">연락</a>
-        </nav>
-        <button class="hamburger" id="hamburgerBtn" aria-label="메뉴 열기">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div class="mobile-nav" id="mobileNav">
-            <a href="#lookbook">룩북</a>
-            <a href="#review">후기</a>
-            <a href="#contact">연락</a>
-            <a href="tel:010-6279-0862">010-6279-0862</a>
-        </div>
-    </header>
-
-    <main>
-        <!-- HERO SECTION -->
-        <section class="hero" id="lookbook">
-            <div class="hero-text">
-                <h1>게이트<br>클럽 룩북</h1>
-                <div class="tagline">보딩 전에 입는 진짜 클럽 패션</div>
-                <p style="font-size:1.4rem; font-weight:600; margin-bottom:32px;">
-                    <strong>공항</strong>은 더 이상 대기 장소가 아니다.<br>
-                    여긴 <strong>클럽</strong>이고, 너의 룩은 이미 <strong>탑승</strong> 중이다.
-                </p>
-                <span class="skew-box">#스트릿브루탈리즘 #오버사이즈 #모노크롬</span>
-            </div>
-            <div class="hero-visual">
-                <span style="transform:rotate(-4deg); display:inline-block;">BRUTAL</span>
-            </div>
-        </section>
-
-        <!-- STREET BRUTAL 철학 -->
-        <section style="border-top-width:6px;">
-            <div class="section-inner">
-                <h2 style="margin-bottom:24px;">룰을<br>깨라</h2>
-                <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-gap); align-items:start;">
-                    <div>
-                        <p style="font-size:1.6rem; font-weight:800; margin-bottom:16px;">
-                            <span style="background:var(--accent); color:var(--primary); padding:0 8px;">❌</span> 
-                            강남 클럽 룩북? <span style="text-decoration:line-through; opacity:0.5;">그런 건 여기 없다.</span>
-                        </p>
-                        <p>인천발, 김포발, 제주발. 게이트는 곧 클럽의 입구다.<br>
-                            우리는 <strong>콘크리트</strong> 위에 <strong>오렌지</strong>를 던진다.<br>
-                            얌전한 캐리어는 집에 두고 와라.<br>
-                            여기는 <strong>T3B05</strong> — 공항 클럽 룩북의 정점.
-                        </p>
-                    </div>
-                    <div style="background:var(--primary); color:var(--secondary); padding:32px; border-left:12px solid var(--accent); transform: rotate(1deg);">
-                        <p style="font-family:var(--mono); font-size:1rem;">"게이트에서 터는 스타일은 따로 있다. <br>오버사이즈 실루엣, 벌어진 숄더, <br>그리고 <strong>주황색</strong> 한 방울."</p>
-                        <p style="margin-top:16px;">— 게이트 앤 그라운드 디렉터</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- UGC 리뷰 섹션 -->
-        <section id="review">
-            <div class="section-inner">
-                <h2 style="margin-bottom:0;">진짜 후기</h2>
-                <p style="font-size:1.2rem; margin-bottom:16px;">게이트에서 입고, 클럽에서 털었다. <strong>거짓말 안 함.</strong></p>
-                <div class="review-grid">
-
-                    <div class="review-card">
-                        <span class="stars">★★★★★</span>
-                        <div class="nickname">@서울파이터</div>
-                        <span class="date">2025.02.14
-
-
-
-
-
-
-
-
-
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-10">2026-06-10</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공항 클럽 룩북 현장에서 놓치기 쉬운 포인트를 기록해봤다</h4>
-        <h3>포스트 DNA 52d6551e #### 제목: 창작한 제목 - "슬라이드 번호 7의 비밀: 음모론과 사실 사이에서" --- ## 관찰 기록시간과 장소가 드러나는 관찰 기록으로 시작합니다. ### 현장 단서아침, 월요일 아침 공항 클럽 룩북을 확인하고 있었습니다.</h3>
-      </div>
-      <a href="posts/field_note-002-r2t6p3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
-        <h3>포스트 메타정보포스트 기획 테마: 공항 클럽 룩북 경험자에게 물어본 현실적인 판단 기준 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 상세 정보 확인 "월 매출 3000만원 찍고도 폐업한 진짜 원가 구조에 대한 전직 업주의 비판적</h3>
-      </div>
-      <a href="posts/interview-001-107z47f.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-10">2026-06-10</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공항 클럽 룩북 솔직 후기 — 3개월 써본 사람의 리얼 리뷰</h4>
-        <h2>제목: 창작한 제목 ### 공항 클럽 룩북 비교 분석: "데모 버전의 달라진 지역과 적 배치" 아, 진짜... 다크소울 1편 출시 전 데모버전에서만 존재했던 특정 지역과 적 배치의 차이가 얼마나 큰지를 보여주는 예입니다. 이런 미공개 데이터를 통해 어떤 게임도 숨</h2>
-      </div>
-      <a href="posts/review-001-r2t6p3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-05">2026-06-05</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공항 클럽 룩북에 가려진 진짜 &#39;데이터 룩&#39;: 형이 뜯어본 비밀 슬라이드의 이면</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">솔직히 말해서, 나는 남들 다 좋다는 건 꼭 한번 삐딱하게 보는 편이라니까. 요즘 ‘공항 클럽 룩북’이니 뭐니 하면서 겉모습에 신경 쓰는 트렌드가 뜨겁다던데, 글쎄, 정작 진짜 중요한 건 그 룩 뒤에 숨겨진 '내용물' 아니겠어? 마치 에드워드 스노든이 폭로한 NSA 프</p>
-      </div>
-      <a href="posts/review-001.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공항 클럽 룩북 관련 추천 정보 — 놓치면 후회할 꿀팁</h4>
-        <h3>포스트 DNA 4023f91e #### 제목: 창작한 제목 | 공항 클럽 룩북, 글룸헤이븐 클래스 카드 변동과 밸런스 분석 아, 진짜... 글룸헤이븐 1판과 2판 사이에 클래스 카드들의 변화가 눈에 띄네요. 그 변화를 정확하게 파악하고 이해하기 위해선 어떤 맥락</h3>
-      </div>
-      <a href="posts/t3link-002-107z47f.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
+<body class="r-main-jotw">
+  <!-- 네비게이션 (공통) -->
+  <nav class="nav-present">
+    <div class="hamburger-menu">
+      <button aria-label="메뉴 열기">☰</button>
     </div>
-  </div>
-</section>
+    <ul class="responsive-768">
+      <li><a href="/index.html">홈</a></li>
+      <li><a href="/region.html">지역별 비교</a></li>
+      <li><a href="/tips.html">이용 팁</a></li>
+      <li><a href="/faq.html">FAQ</a></li>
+      <li><a href="/contact.html">문의</a></li>
+    </ul>
+  </nav>
+
+  <!-- 메인 비주얼 -->
+  <section class="m-img-9i4x">
+    <ul class="show">
+      <li>
+        <button>공항 클럽이란?</button>
+        <div>
+          <p>공항 클럽은 공항 내부 또는 인근에 위치한 사교·엔터테인먼트 공간으로, 여행 전후에 편안한 휴식과 네트워킹을 제공하는 곳입니다.</p>
+          <p>다양한 라운지, 바, 다이닝 옵션을 갖추고 있어 개인 및 비즈니스 목적 모두에 적합합니다.</p>
+        </div>
+      </li>
+      <li>
+        <button>주요 서비스</button>
+        <div>
+          <p>프리미엄 라운지 이용, 전용 라운드테이블, 맞춤형 음료 서비스 등이 제공됩니다.</p>
+          <p>또한, 일부 클럽은 프라이빗 파티룸과 파트너십을 통한 할인 혜택을 제공해 여행 경비를 절감할 수 있습니다.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 소개 섹션 -->
+  <section class="n-img-k1z8">
+    <div>
+      <h2>공항 클럽, 왜 선택해야 할까?</h2>
+      <p>공항 클럽은 단순히 대기 시간을 채우는 공간이 아닙니다. 고속 Wi‑Fi, 전원 콘센트, 비즈니스 미팅 공간을 구비해 업무 효율성을 높여줍니다. 특히, 긴 국제선 대기 시간 동안 편안한 의자와 조용한 분위기에서 휴식을 취할 수 있어 피로 회복에 큰 도움이 됩니다.</p>
+      <p>또한, 다양한 식음료 옵션과 문화 프로그램(예: 현지 와인 시음회, 라운지 음악 공연)으로 여행 전후의 기대감을 높여줍니다. 이런 요소들은 여행 전후의 스트레스를 최소화하고, 여행을 더욱 풍부한 경험으로 만들어줍니다.</p>
+
+      <h2>이용 흐름 한눈에 보기</h2>
+      <p>공항 클럽 이용 절차는 크게 네 단계로 나뉩니다. 첫 번째는 온라인 또는 현장 예약, 두 번째는 체크인 시 회원 카드 제시, 세 번째는 라운지 입장, 마지막은 이용 종료 후 체크아웃입니다. 각 단계마다 체크해야 할 포인트가 있습니다.</p>
+      <p>예를 들어, 예약 단계에서는 실제 이용 가능한 좌석 수와 회원 등급에 따른 혜택을 확인하고, 체크인 시에 신분증과 예약 확인서를 함께 제시하면 원활한 입장이 가능합니다. 라운지에서 제공되는 서비스는 사전에 메뉴와 프로그램 일정을 확인해 두면 원하는 서비스를 놓치지 않을 수 있습니다.</p>
+    </div>
+  </section>
+
+  <!-- 체크 포인트 카드 -->
+  <section class="m-img-9i4x">
+    <ul>
+      <li>
+        <button>예약 전 확인 사항</button>
+        <div>
+          <p>1) 회원 등급 및 제공 혜택</p>
+          <p>2) 라운지 운영 시간과 휴일</p>
+          <p>3) 포함 서비스(음식, 음료, 샤워 시설) 여부</p>
+        </div>
+      </li>
+      <li>
+        <button>현장 체크인 팁</button>
+        <div>
+          <p>1) 회원 카드와 여권을 동시에 제시</p>
+          <p>2) 예약 번호와 비행 정보 확인</p>
+          <p>3) 라운지 내 안내 팜플릿을 미리 읽기</p>
+        </div>
+      </li>
+      <li>
+        <button>이용 중 주의점</button>
+        <div>
+          <p>1) 소음 관리: 주변 손님을 배려해 통화는 조용히</p>
+          <p>2) 시설 사용 제한 시간: 샤워실·피트니스는 예약제</p>
+          <p>3) 퇴실 전 정리: 사용한 식기·재료는 지정된 공간에 반환</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section class="n-img-k1z8">
+    <div>
+      <h2>자주 묻는 질문</h2>
+      <h3>Q1. 공항 클럽 이용에 별도의 입장료가 있나요?</h3>
+      <p>A1. 대부분의 클럽은 회원 등급에 따라 기본 이용료가 포함됩니다. 추가 프리미엄 서비스(전용 라운지, 개인 파티룸 등)는 별도 요금이 부과될 수 있습니다.</p>
+      
+      <h3>Q2. 비즈니스 목적의 회의실 사용은 어떻게 예약하나요?</h3>
+      <p>A2. 온라인 예약 시스템에서 ‘회의실’ 옵션을 선택하거나, 현장 직원에게 직접 문의하면 실시간 가용 여부와 가격을 확인할 수 있습니다. 예약은 최소 24시간 전까지 권장됩니다.</p>
+      
+      <h3>Q3. 가족 동반 시 추가 요금이 발생하나요?</h3>
+      <p>A3. 대부분의 클럽은 동반 가족 1인당 추가 요금을 부과합니다. 다만, 특정 회원 등급에서는 동반자 무료 이용 혜택이 포함될 수 있으니 회원 등급 안내를 확인하십시오.</p>
+
+      <h3>Q4. 라운지 내에서 제공되는 와이파이는 안전한가요?</h3>
+      <p>A4. 공항 클럽은 보안 프로토콜을 적용한 고속 와이파이를 제공하므로, 일반적인 업무용 브라우징 및 영상 회의에 안전하게 사용할 수 있습니다. 민감한 거래는 VPN 사용을 권장합니다.</p>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="n-img-k1z8">
+    <div>
+      <p>© 2026 공항 클럽 룩북. All rights reserved.</p>
+      <p>문의: <a href="mailto:contact@gangnam-club-review.node-link.shop">contact@gangnam-club-review.node-link.shop</a></p>
+    </div>
+  </footer>
 </body>
 </html>

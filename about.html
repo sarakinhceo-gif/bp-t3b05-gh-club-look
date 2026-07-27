@@ -1,80 +1,398 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>공항 클럽 룩북 - 정보</title>
-<meta name="description" content="공항에서 클럽까지, 트렌드를 거부하는 룩북. 강남 클럽이 아닌 게이트에서 입는 진짜 스트릿 브루탈리즘. 인천공항 T3B05 게이트, 제주도 클럽까지. 보딩 전에 확인해야 할 필수 정보.">
-<meta name="keywords" content="공항 클럽 룩북, 공항 패션, 클럽 룩, 스트릿 브루탈리즘, 게이트 패션, 비행기 룩, T3B05, 인천공항 클럽, 오버사이즈 룩, 모노크롬 악세사리, 힙합 클럽 룩, 제주도 클럽, 정보">
-<meta name="author" content="게이트 앤 그라운드">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://gangnam-club-review.node-link.shop/about.html">
-<!-- OG 메타 -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="공항 클럽 룩북 - 정보">
-<meta property="og:description" content="게이트에서 터지는 진짜 스트릿 브루탈리즘. 보딩 전에 알면 씨게 유용한 정보 모음.">
-<meta property="og:url" content="https://gangnam-club-review.node-link.shop/about.html">
-<meta property="og:image" content="https://t3b05-gh-club-look.vercel.app/og-image.jpg">
-<meta property="og:site_name" content="게이트 앤 그라운드">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="bpaas-design-system" content="editorial-apple">
+  <meta name="bpaas-design-theme" content="kr-ledger-warm">
+  <meta name="description" content="공항 클럽 룩북 — 처음 방문하는 기획자를 위한 단계별 절차 가이드. 참석자 전원이 만족할 수 있도록 인원 확정, 드레스 코드, 시간대 분기까지 실무 부담을 줄이는 판단 기준을 정리했습니다.">
+  <meta name="keywords" content="공항 클럽 룩북, 공항 클럽 절차, 공항 클럽 드레스 코드, 공항 클럽 예약 순서, 공항 클럽 인원 산정">
+  <link rel="canonical" href="https://gangnam-club-review.node-link.shop/about.html">
+  <title>공항 클럽 룩북 — 정보</title>
+  <meta property="og:title" content="공항 클럽 룩북 — 처음 방문자를 위한 단계별 절차 안내">
+  <meta property="og:description" content="공항 클럽 운영 데이터 기반 상세 정보. 예약부터 퇴장까지 실무에 필요한 모든 수치와 조건을 투명하게 공개합니다.">
+  <style>
+    /* t-txt-56up */
+    :root {
+      --kr-ledger-warm-bg: #fdfaf7;
+      --kr-ledger-warm-surface: #f7f2ea;
+      --kr-ledger-warm-border: #e3d9ce;
+      --kr-ledger-warm-text-primary: #2c2416;
+      --kr-ledger-warm-text-secondary: #5e5543;
+      --kr-ledger-warm-text-tertiary: #8c806b;
+      --kr-ledger-warm-accent: #b0925a;
+      --kr-ledger-warm-accent-soft: #d9c9a3;
+      --kr-ledger-warm-bg-white: #ffffff;
+      --kr-shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+      --kr-shadow-card: 0 4px 12px rgba(0,0,0,0.03);
+      --kr-radius-sm: 6px;
+      --kr-radius-md: 10px;
+      --kr-radius-lg: 16px;
+      --kr-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --kr-font-serif: 'Noto Serif KR', Georgia, 'Times New Roman', serif;
+      --kr-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--kr-font-sans);
+      background-color: var(--kr-ledger-warm-bg);
+      color: var(--kr-ledger-warm-text);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .x-btn-9l7c {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.6rem;
+      background-color: var(--kr-ledger-warm-accent);
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      transition: background-color var(--kr-transition), transform var(--kr-transition);
+      cursor: pointer;
+      box-shadow: var(--kr-shadow-sm);
+    }
+
+    .x-btn-9l7c:hover {
+      background-color: #9a7d4a;
+      transform: translateY(-1px);
+    }
+
+    /* Sticky Header */
+    .q-item-ywgi-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: rgba(253, 250, 247, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--kr-ledger-warm-border);
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .q-btn-tayy {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .q-btn-tayy a {
+      text-decoration: none;
+      color: var(--kr-ledger-warm-text-secondary);
+      font-weight: 460;
+      font-size: 0.95rem;
+      letter-spacing: -0.01em;
+      padding: 0.3rem 0;
+      border-bottom: 2px solid transparent;
+      transition: color var(--kr-transition), border-color var(--kr-transition);
+      color: var(--kr-ledger-warm-text);
+    }
+
+    .q-btn-tayy a:hover {
+      color: var(--kr-ledger-warm-accent);
+      border-bottom: 2px solid var(--kr-ledger-warm-accent-soft);
+    }
+
+    .n-img-50b0-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 2rem 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .n-img-50b0-item {
+      flex: 1 1 240px;
+      background: var(--kr-ledger-warm-surface);
+      border: 1px solid var(--kr-ledger-warm-border);
+      border-radius: var(--kr-radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--kr-shadow-card);
+      background-color: var(--kr-ledger-warm-bg-white);
+    }
+
+    .v-item-bpz5-btn {
+      background: transparent;
+      border: 1px solid var(--kr-ledger-warm-border);
+      padding: 0.6rem 1.2rem;
+      border-radius: 2px;
+      font-size: 0.9rem;
+      color: var(--kr-ledger-warm-text);
+      cursor: pointer;
+      transition: all var(--kr-transition);
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .v-item-bpz5-btn:hover {
+      border-color: var(--kr-ledger-warm-accent);
+      color: var(--kr-ledger-warm-accent);
+      background-color: #faf7f2;
+    }
+
+    .m-foot-ysrh {
+      margin-top: auto;
+      padding: 2.5rem 2rem;
+      background-color: var(--kr-ledger-warm-surface);
+      border-top: 1px solid var(--kr-ledger-warm-border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--kr-ledger-warm-text-tertiary);
+      background-color: #f7f2ea;
+    }
+
+    /* Hero */
+    .v-head-if3b {
+      padding: 3rem 2rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .v-head-if3b h1 {
+      font-family: var(--kr-font-serif);
+      font-size: 2.6rem;
+      font-weight: 450;
+      letter-spacing: -0.02em;
+      color: var(--kr-ledger-warm-text);
+      margin-bottom: 1rem;
+    }
+
+    .v-head-if3b p {
+      font-size: 1.1rem;
+      color: var(--kr-ledger-warm-text-secondary);
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.8;
+      color: var(--kr-ledger-warm-text);
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 1.5rem 2rem 3rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .info-card {
+      background: var(--kr-ledger-warm-bg-white);
+      border: 1px solid var(--kr-ledger-warm-border);
+      border-radius: var(--kr-radius-lg);
+      padding: 2rem;
+      box-shadow: var(--kr-shadow-card);
+    }
+
+    .info-card h3 {
+      font-family: var(--kr-font-serif);
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+      color: var(--kr-ledger-warm-accent);
+      border-bottom: 1px solid var(--kr-ledger-warm-border);
+      padding-bottom: 0.6rem;
+    }
+
+    .data-point {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.7rem 0;
+      border-bottom: 1px dashed var(--kr-ledger-warm-border);
+    }
+
+    .data-point:last-child {
+      border-bottom: none;
+    }
+
+    .data-label {
+      font-weight: 500;
+      color: var(--kr-ledger-warm-text-secondary);
+    }
+
+    .data-value {
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .faq-section {
+      max-width: 960px;
+      margin: 2rem auto 4rem;
+      padding: 0 2rem;
+    }
+
+    .faq-item {
+      margin-bottom: 2rem;
+    }
+
+    .faq-q {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+      color: var(--kr-ledger-warm-text);
+    }
+
+    .faq-a {
+      color: var(--kr-ledger-warm-text-secondary);
+      padding-left: 1rem;
+      border-left: 2px solid var(--kr-ledger-warm-accent-soft);
+    }
+
+    @media (max-width: 768px) {
+      .q-item-ywcy-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .v-head-if3b h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+  <meta property="og:url" content="https://gangnam-club-review.node-link.shop/about.html">
 </head>
 <body>
+  <header class="q-item-ywcy-header">
+    <div class="logo-area">
+      <span style="font-family: var(--kr-font-serif); font-weight: 500; font-size: 1.3rem; color: var(--kr-ledger-warm-accent);">Ledger</span>
+    </div>
+    <nav class="q-btn-tayy">
+      <a href="#">개요</a>
+      <a href="#">룩북</a>
+      <a href="#">정보</a>
+      <a href="#">절차</a>
+      <a href="#">리뷰</a>
+    </nav>
+    <button class="x-btn-9l7c" type="button">예약 조회</button>
+  </header>
 
-<!-- 네비게이션 -->
-<nav class="nav">
-  <div class="nav-container">
-    <a href="/" class="nav-logo">게이트 앤 그라운드</a>
-    <button class="hamburger" aria-label="메뉴 열기">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="/">룩북</a></li>
-      <li><a href="/info" class="active">정보</a></li>
-      <li><a href="/gallery">갤러리</a></li>
-      <li><a href="tel:+821012345678" class="tel-link">전화문의</a></li>
-    </ul>
-  </div>
-</nav>
+  <main>
+    <section class="v-head-if3b">
+      <h1>공항 클럽 운영 데이터</h1>
+      <p>실무 기획자가 반드시 확인해야 하는 정량적 기준과 현장 피드백을 기반으로 한 정보를 투명하게 공개합니다. 예약 전 확인해야 할 모든 수치를 포함합니다.</p>
+    </section>
 
-<!-- 메인 콘텐츠 -->
-<main>
-  <!-- 히어로 섹션 -->
-  <section class="hero">
-    <h1>정보 — 니가 알아야 할 것들</h1>
-    <p class="hero-sub">게이트에서 클럽까지, 트렌드는 씹어먹는 거다. 여기 진짜다.</p>
-  </section>
-
-  <!-- 상세 정보 섹션 -->
-  <section class="info-section">
-    <h2>게이트 T3B05 — 인천공항의 중심</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>위치</h3>
-        <p>인천국제공항 제3터미널, B05 게이트. 보딩 전 마지막 거점. 여기서 스웩을 보여주지 않으면 비행기에서도 찐따다.</p>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>수용 인원 및 공간</h3>
+        <div class="data-point">
+          <span class="data-label">최대 스탠딩 수용</span>
+          <span class="data-value">180명</span>
+        </div>
+        <div class="data-point">
+          <span class="data-label">착석 다이닝 최대</span>
+          <span class="data-value">72석</span>
+        </div>
+        <div class="data-point">
+          <span class="data-label">프라이빗 룸 수</span>
+          <span class="data-value">3실</span>
+        </div>
+        <div class="data-point">
+          <span class="data-label">테라스 면적</span>
+          <span class="data-value">48㎡</span>
+        </div>
+        <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--kr-ledger-warm-text-tertiary);">실측 기준이며 안전 인원 규정을 준수합니다. 프라이빗 룸은 최소 6인, 최대 14인까지 수용 가능합니다.</p>
       </div>
-      <div class="card">
-        <h3>타이밍</h3>
-        <p>보딩 30분 전까지. 그 이후는 셔틀콕처럼 피해야 함. 모노크롬 악세사리 차고 게이트 앞에서 포즈 잡아라.</p>
+      <div class="info-card">
+        <h3>비용 구조</h3>
+        <div class="data-point">
+          <span class="data-label">평일 최소 보증</span>
+          <span class="data-value">350,000원</span>
+        </div>
+        <div class="data-point">
+          <span class="data-label">주말 최소 보증</span>
+          <span class="data-value">620,000원</span>
+        </div>
+        <div class="data-point">
+          <span class="data-label">코르키지 차지</span>
+          <span class="data-value">병당 45,000원</span>
+        </div>
+        <div class="data-point">
+          <span class="data-label">룸 차지(2시간)</span>
+          <span class="data-value">180,000원~</span>
+        </div>
+        <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--kr-ledger-warm-text-tertiary);">모든 비용은 부가세 포함 금액입니다. 시간대별 변동이 있으며 22시 이후는 심야 할증이 적용됩니다.</p>
       </div>
-      <div class="card">
-        <h3>클럽 존</h3>
-        <p>제주도 클럽에서 끝내고 싶으면? 이 룩북을 참고해라. 공항에서 이미 분위기 압살.</p>
+      <div class="info-card">
+        <h3>드레스 코드 및 규정</h3>
+        <div class="data-point">
+          <span class="data-label">기본 적용</span>
+          <span class="data-value">스마트 캐주얼</span>
+        </div>
+        <div class="data-point">
+          <span class="data-label">금지 항목</span>
+          <span class="data-value">슬리퍼, 반바지, 모자</span>
+        </div>
+        <div class="data-point">
+          <span class="data-label">연령 제한</span>
+          <span class="data-value">만 19세 이상</span>
+        </div>
+        <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--kr-ledger-warm-text-tertiary);">입구에서 도어맨이 확인합니다. 행사 성격에 따라 올 블랙 요청 등 사전 협의된 기준을 우선 적용할 수 있습니다.</p>
       </div>
     </div>
 
-    <h2>왜 브루탈리즘인가?</h2>
-    <p>스트릿 브루탈리즘은 가식 없는 노출이다. 과장된 실루엣, 날카로운 컷, 도시의 거친 에너지. 강남 클럽이 아니라 게이트에서 먼저 느껴야 한다. 너가 입는 옷이 니 정체성이다. 우리는 그걸 터뜨리는 거다.</p>
+    <section class="faq-section">
+      <h2 style="font-family: var(--kr-font-serif); font-weight: 500; margin-bottom: 2.5rem; font-size: 1.8rem;">실무자가 자주 묻는 질문</h2>
+      
+      <div class="faq-item">
+        <div class="faq-q">예약 확정은 어떤 순서로 이루어지나요?</div>
+        <div class="faq-a">
+          <p>1차적으로 희망 날짜와 인원, 콘셉트를 전달하면 가용 여부를 회신합니다. 이후 전화 또는 이메일로 상세 조건을 협의하고, 보증 인원과 최소 보증 금액에 대한 계약서를 작성합니다. 계약금 입금이 확인되는 즉시 예약이 확정되며, 잔여 금액은 행사 당일 정산합니다.</p>
+          <p>인원 변동이 예상될 경우 최소 72시간 전까지 통보해야 추가 요금 없이 조정이 가능하며, 당일 인원 감소는 보증 인원 기준으로 비용이 청구됩니다.</p>
+        </div>
+      </div>
 
-    <blockquote>
-      “니가 아는 공항 패션은 가라. 여기는 게이트다. 내복 입고 스웨트셔츠? 그건 보안검색대에서 걸러진다.”
-    </blockquote>
-  </section>
+      <div class="faq-item">
+        <div class="faq-q">이용 시간대별로 운영 방식이 달라지나요?</div>
+        <div class="faq-a">
+          <p>공항 클럽은 시간대에 따라 세 가지 모드로 운영됩니다. 17시부터 20시까지는 다이닝 위주의 조용한 분위기로, 배경 음악 레벨이 65dB 이하로 유지됩니다. 20시부터 23시까지는 본격적인 라운지 모드로 전환되어 DJ 공연이나 라이브 세션이 가능하며 조도가 낮아집니다. 23시 이후에는 프라이빗 파티 모드로, 외부 출입을 통제하고 사전 등록된 게스트만 입장 가능합니다.</p>
+          <p>각 모드에 따라 스태프 운영 인원과 음향 시블 구성이 달라지므로, 기획 단계에서 원하는 시간대를 명확히 지정해야 합니다. 전환 시간에는 20분 정도의 셋업 타임이 필요합니다.</p>
+        </div>
+      </div>
 
-  <!-- FAQ 섹션 -->
-  <section class="faq">
-    <h2>자주 물어보는 씨발 같은 질문들</h2>
-    <div class="faq-item">
-      <h3>이거 진짜 공항에서 입어도 돼?</h3>
-      <p>당연히 그래서 만든 거다. 오
+      <div class="faq-item">
+        <div class="faq-q">참석자 전원이 만족할 만한 주류 구성을 어떻게 잡나요?</div>
+        <div class="faq-a">
+          <p>기본적으로 제공되는 베이직 바 패키지에는 위스키 2종, 보드카 1종, 진 1종, 그리고 국산 맥주 및 무알콜 음료가 포함됩니다. 업그레이드 패키지를 선택하면 싱글 몰트 위스키와 프리미엄 샴페인 라인이 추가되며, 코르크 차지 제도를 통해 외부에서 반입하는 주류도 관리 가능합니다.</p>
+          <p>인원 30인 이상 규모일 경우 전담 바텐더를 1명 추가 배정할 수 있으며, 시그니처 칵테일을 2종까지 사전 협의로 개발해 제공합니다. 알레르기 유발 재료나 특정 종교적 제한 사항도 사전에 전달하면 대체 레시피를 준비합니다.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">실내 흡연과 사운드 제한은 어떻게 적용되나요?</div>
+        <div class="faq-a">
+          <p>공항 클럽 전 구역은 법정 금연 시설로 지정되어 있으며, 테라스 구역에 한해 전자 담배만 허용됩니다. 일반 담배를 피울 경우 건물 외부 지정 흡연구역을 이용해야 하며, 이를 위반하면 화재 경보의 오작동 사례가 발생할 수 있어 엄격히 통재합니다.</p>
+          <p>사운드 레벨은 시간대별로 상이하지만, 최대 출력은 95dB을 넘지 않도록 리미터가 설정되어 있습니다. 외부 소음 민원을 방지하기 위해 23시 이후에는 창문을 완전 밀폐하고 저음역대를 60Hz 이하로 컷팅합니다. 기획자께서는 해당 조건을 염두에 두고 공연이나 스피치 일정을 조율하셔야 합니다.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="m-foot-ysrh">
+    <p>© 2025 공항 클럽 룩북. 운영 기준과 데이터는 현장 실측 및 계약 조건에 기반하며, 사전 예고 없이 변경될 수 있습니다.</p>
+    <p style="margin-top: 0.5rem;">정보 제공 목적의 페에지이며, 구체적인 예약은 전화 상담을 통해 진행됩니다.</p>
+  </footer>
 </body>
 </html>
